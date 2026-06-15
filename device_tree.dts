@@ -1,0 +1,9 @@
+virtual_pwm {
+	compatible = "test,virtual-pwm";
+	#pwm-cells = <3>;
+};
+
+consumer {
+	compatible = "test,pwm-consumer";
+	pwms = <&virtual_pwm 0 1000000 0>;
+};
