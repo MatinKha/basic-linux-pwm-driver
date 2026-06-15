@@ -25,7 +25,7 @@ static int __init pwm_init(void) {
   if (ret)
     return ret;
 
-  // allocating a pwm on the kernel memory
+  // allocating pwm on kernel's memory
   chip = pwmchip_alloc(&dev, 1, 0);
   if (!chip)
     return -ENOMEM;
