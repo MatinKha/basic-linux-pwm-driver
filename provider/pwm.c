@@ -32,7 +32,7 @@ static int __init pwm_init(void) {
 
   chip->ops = &pwm_ops;
 
-  // add thing the pwm chip to the kernel as a module
+  // add the pwm chip to the kernel as a module
   // you should be able to find this module on sysfs after this
   ret = pwmchip_add(chip);
   if (ret) {
