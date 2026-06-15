@@ -59,4 +59,4 @@ static void __exit pwm_exit(void) {
 module_init(pwm_init);
 module_exit(pwm_exit);
 MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("nothing");
+MODULE_DESCRIPTION("virtual PWM provider");
