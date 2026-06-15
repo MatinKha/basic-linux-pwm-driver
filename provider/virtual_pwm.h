@@ -47,7 +47,6 @@ static int virtual_pwm_get_state(struct pwm_chip *chip,
 
 // these functions are provided to the consumer
 // consumer is able to set the state with apply and get the state with get_state
-// for example you can read values from a gpio port using kernel's gpio
 static const struct pwm_ops pwm_ops = {
     .apply = virtual_pwm_apply,
     .get_state = virtual_pwm_get_state,
