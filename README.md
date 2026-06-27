@@ -60,4 +60,4 @@ sudo rmmod pwm
 if the module is loaded it should be visible in sysfs tree
 ```bash
 ls /sys/class/pwm
-``
+```
